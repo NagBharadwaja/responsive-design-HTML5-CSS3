@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobile Web Design Scratch</title>
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div id="wrapper"> <!-- Wrapper starts -->
+		<!-- Banner Wrapper starts -->
+		<div id="banner-wrapper">
+			<header>
+				<div id="header-inner">
+					<!--<a href="index.html" id="logo"></a>-->
+					<a href="http://placehold.it" style="float: left; margin: 2% 2% 0 2%;">
+						<img src="http://placehold.it/104x52">
+					</a>
+					<nav>
+						<a href="#" id="menu-icon"></a>
+						<ul>
+							<li><a href="index.html" >Home</a></li>
+							<li><a href="#" >Skills</a></li>
+							<li><a href="#" >Portfolio</a></li>
+							<li><a href="#" >Our Team</a></li>
+							<li><a href="#" >Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+	<!-- Slider Start -->
+		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+		<div class="slider-wrap">
+			<section class="slider">
+				<ul class="slider1">
+					<li><img src="img/pics/desktop-1.png"/></li>
+          <li><img src="img/pics/desktop-2.png"/></li>
+					<li><img src="img/pics/desktop-3.png"/></li>
+				</ul>
+			</section>
+		</div>
+		<script type="text/javascript">
+			$('.slider1').bxSlider({
+				mode: 'fade',
+				captions: false,
+				auto:true,
+				pager:false,
+
+			});
+			$('.slider2').bxSlider({
+				pager:false,
+				captions: true,
+				maxSlides: 3,
+				minSlides: 1,
+				slideWidth: 230,
+				slideMargin: 10
+			});
+			$('.slider3').bxSlider({
+				mode: 'fade',
+				captions: false,
+				auto:true,
+				pager:false,
+				controls:false,
+			});
+		</script>
+<!--- Slider End -->
+		</div> <!--Banner Wrapper ends -->
+		<section class="one-third">
+			<div class="icon-wrap">
+				<td><i class="fa fa-desktop"></i></td>
+			</div>
+			<h3>Web Design</h3>
+		</section>
+		<section class="one-third">
+			<div class="icon-wrap">
+				<td><i class="fa fa-pencil-square-o"></i></td>
+			</div>
+			<h3>Digital Graphics</h3>
+		</section>
+		<section class="one-third">
+			<div class="icon-wrap">
+				<td><i class="fa fa-file-code-o"></i>
+			</div>
+			<h3>Development</h3>
+		</section>
+		<div class="clearfix-padding"></div>
+		<!-- Left column & Sidebar Starts -->
+		<section class="left-col">
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</section>
+		<section class="sidebar">
+			<img src="img/pics/computer-guy.png"/>
+		</section>
+		<div class="clearfix-padding"></div>
+		<!-- Left column & Sidebar Ends -->
+		<!-- One third Padding starts -->
+		<section class="one-third-padding">
+			<h3>Skill One</h3>
+			<!--<img src="https://igmedia.blob.core.windows.net/igmedia/telugu/gallery/movies/yuva/main.jpg"/>-->
+			<img src="img/pics/900-644.png"/>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</section>
+		<section class="one-third-padding">
+			<h3>Skill Two</h3>
+			<!--<img src="https://i.imgur.com/Y86Q1Zo.jpg"/>-->
+			<img src="img/pics/900-644.png"/>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</section>
+		<section class="one-third-padding">
+			<h3>Skill Three</h3>
+			<!--<img src="https://i.ytimg.com/vi/14m00xcuIjo/hqdefault.jpg"/>-->
+			<img src="img/pics/900-644.png"/>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</section>
+		<!-- One third Padding ends -->
+	</div> <!--Wrapper ends -->
+	<!-- Footer Starts -->
+	<footer>
+		<div id="footer-wrapper">
+			<div id="icon-text">
+				<div class="icon-text-text">
+					<ul class="footer-nav">
+						<li><a href="index.html" class="current">Home</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#" >Portfolio</a></li>
+						<li><a href="#" >Our Team</a></li>
+						<li><a href="#" >Contact</a></li>
+					</ul>
+				</div>
+				<div class="icon-text-icon">
+					<ul class="social">
+						<li>
+							<a href="mailto:email@website.com"><i class="fa fa-envelope-o"></i></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="https://www.google.com"><i class="fa fa-google-plus"></i></a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Ends -->
+</body>
+</html>

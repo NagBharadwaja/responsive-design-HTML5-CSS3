@@ -1,0 +1,331 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+body{
+	background: #F1F6F8;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+p{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 160%;
+	line-height: 115%;
+	text-indent: 2%;
+	padding: 3%;
+	text-align: justify;
+	color: #524C56;
+}
+
+h3{
+	font-size: 175%;
+	line-height: 155%;
+	font-weight: 500;
+	color: #524C56;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+}
+
+a{
+	color: #524C56;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover{
+	color: #C3D7DF;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+.clearfix-padding{
+	clear: both;
+	padding: 1%;
+}
+
+#wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#banner-wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 0 3% 0;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+}
+
+#logo{
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 60px;
+	background: url(img/icons/RD-dark.png) no-repeat center;
+}
+
+/**Start Navigation**/
+nav{
+	float: right;
+	padding: 25px 20px 0 0;
+}
+
+#menu-icon{
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(img/icons/nav-dark.png) center;
+}
+
+ul{
+	list-style: none;	
+}
+
+nav ul li{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 150%;
+	display: inline-block;
+	padding: 10px;
+	color: #6991AC;
+}
+
+.current{
+	color: #3F5767;
+}
+
+a:hover{
+	color: #A5BDCD;
+}
+
+/**End Navigation**/
+
+/*.slider{
+	max-width: 1200px;
+}*/
+
+/*.slider1{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}*/
+
+.slider1 img{
+	max-width: 100%;
+}
+
+.slider .bx-wrapper .bx-controls a{
+	display: none;
+}
+
+.one-third{
+	float: left;
+	width: 33.33%;
+	text-align: justify;
+}
+
+.icon-wrap{
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	border-radius: 125%;
+	text-align: center;
+	background-color: #6991AC;
+	margin-top: 8%;
+	margin-bottom: 4%;
+}
+
+.icon-wrap i{
+	text-align: center;
+	color: #F0F0F0;
+	font-size: 450%;
+	padding: 20%;
+}
+
+.left-col{
+	float: left;
+	margin: 0 auto;
+	width: 60%;
+	height: auto;
+	padding: 1%;
+}
+
+.sidebar{
+	float: right;
+	margin: 0 auto;
+	width: 32%;
+	height: auto;
+	padding: 1%;
+}
+
+.one-third-padding{
+	float: left;
+	width: 29%;
+	margin: 2% 2%;
+	text-align: justify;
+}
+
+/** Footer starts **/
+
+footer{
+	background-color: #6991AC;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.icon-text{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.icon-text-text{
+	float: left;
+	width: 20%;
+	padding: 4%;
+}
+
+.icon-text-icon{
+	float: left;
+	width: 64%;
+	padding: 4% 4% 2% 0;
+}
+
+.footer-nav{
+	text-align: right;
+}
+
+.footer-nav a{
+	font-size: 160%;
+	color: #C3D7DF;
+	font-weight: 300;
+}
+
+.footer-nav a:hover{
+	color: #F5F5F5;
+}
+
+.social{
+	list-style: none;
+	text-align: center;
+}
+
+.social li{
+	display: inline;
+}
+
+.social i{
+	font-size: 380%;
+	margin: 1%;
+	padding: 5% 5% 5% 4%;
+	color: #C3D7DF;
+}
+
+.social i:hover{
+	color: #F5F5F5;
+}
+
+/** Footer ends **/
+
+/** MEDIA QUERIES **/
+@media screen and (max-width: 700px){
+	p{
+		font-size: 130%;
+	}
+	h3{
+		font-size: 150%;
+	}
+	header{
+		height: 80px;
+		position: relative;
+	}
+	#logo{
+		margin: 16px 0 20px -10px;
+		background: url(img/icons/RD_mobile-dark.png) no-repeat center;
+	}
+	#menu-icon{
+		display: inline-block;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav ul, nav:active ul{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		background-color: #F5F5F5;
+		border: 1px solid #A5BDCD;
+		right: 20px;
+		width: 50%;
+		border-radius: 3px 0 3px 3px;
+		opacity: 0.95;
+	}
+	nav li{
+		text-align: center;
+		width: 100%;
+	}
+	.one-third, .one-third-padding{
+		width: 100%;
+	}
+	.icon-wrap{
+		width: 80px;
+		height: 80px;
+		margin-top: 3%;
+	}
+	.icon-wrap i{
+		font-size: 250%;
+		padding-top: 27%;
+	}
+	.left-col{
+		width: 100%;
+		padding: 0;
+	}
+	.sidebar{
+		width: 100%;
+	}
+	.one-third-padding{
+		width: 98%;
+		margin: 0;
+		padding: 1%;
+	}
+	.icon-text-text{
+		width: 100%;
+		padding: 0 0 2% 0;
+	}
+	.icon-text-icon{
+		width: 100%;
+		padding-top: 2%;
+		font-size: 80%;
+	}
+	.footer-nav{
+		text-align: center;
+		padding-top: 5%;
+	}
+	.footer-nav li{
+		padding: 1%;
+	}
+	.footer-nav a{
+		font-size: 140%;
+	}
+	.social i{
+		font-size: 200%;
+	}
+}
